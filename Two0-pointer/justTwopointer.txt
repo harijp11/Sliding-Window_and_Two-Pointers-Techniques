@@ -1,0 +1,15 @@
+The two pointer technique is a method where we use two variables (pointers) to move through an array or string instead of using nested loops.
+
+One pointer usually starts from the beginning and the other from the end, or both move in the same direction.
+
+By moving these two pointers intelligently, we can solve problems faster, often in O(n) time instead of O(n²).
+
+It is mostly used in:
+
+Checking palindromes
+
+Finding pairs with a target sum
+
+Sliding window problems
+
+Removing duplicates from sorted arrays
