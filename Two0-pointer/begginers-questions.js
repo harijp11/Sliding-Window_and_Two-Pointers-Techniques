@@ -81,3 +81,38 @@ function threeSum(nums) {
 
 console.log(threeSum([-1, 0, 1, 2, -1, -4]));
 // Output: [ [ -1, -1, 2 ], [ -1, 0, 1 ] ]
+
+
+
+//move zeros to end
+
+
+function x(arr){
+    let point1 = 0 , point2= 0
+    while(point2 < arr.length){
+        if(arr[point2] !== 0 ){
+            [arr[point1],arr[point2]]=[arr[point2],arr[point1]] 
+            point1++
+        }
+           point2++
+    }
+    return arr
+}
+
+console.log(x( [0,1,0,3,12]))
+
+//move zeros to begginning
+
+function x(arr){
+    let point1 = 0 , point2= 0
+    while(point2 < arr.length){
+        if(arr[point2] === 0 ){
+            [arr[point1],arr[point2]]=[arr[point2],arr[point1]] 
+            point1++
+        }
+           point2++
+    }
+    return arr
+}
+
+console.log(x( [0,1,0,3,12]))
